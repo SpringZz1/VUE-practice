@@ -26,7 +26,7 @@ export default defineComponent({
     let list = computed(() => {
       return store.state.list
     })
-    // sessionStorage.setItem('list',JSON.stringify(list))
+    sessionStorage.setItem('list',JSON.stringify(list.value))
     let value = ref('')
     // 添加任务
     let add = (val) => {
